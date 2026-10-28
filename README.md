@@ -1,16 +1,38 @@
-# React + Vite
+# UrbanStride — React E-commerce Storefront
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive sneaker storefront built with **React** and **Vite**, focused on product browsing, micro-interactions, and an end-to-end **front-end checkout demo**.
 
-Currently, two official plugins are available:
+## Highlights
+- Product browsing through the home page and category routes
+- Add-to-cart interactions, cart drawer, item removal, and cart item count
+- Checkout form with order summary and a simulated confirmation flow
+- Responsive layouts and UI animation using **Framer Motion** and **AOS**
+- React Router navigation and reusable storefront components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+React 19 · JavaScript · Vite · React Router · Tailwind CSS · Framer Motion · AOS · Lucide Icons
 
-## React Compiler
+## Run locally
+```bash
+git clone https://github.com/KhurramTaimoor/urbanstride.git
+cd urbanstride
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Then open the local address printed by Vite.
 
-## Expanding the ESLint configuration
+## Project structure
+- `src/pages/Home.jsx` — home storefront
+- `src/pages/CategoryPage.jsx` — product category view
+- `src/pages/CheckoutPage.jsx` — simulated checkout
+- `src/components/CartDrawer.jsx` — interactive cart
+- `src/components/` — navigation and shared storefront UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scope and limitations
+This is a **front-end demonstration**, not a live commerce/payment service. Cart items are held in React state, and placing an order simulates success without charging a card or persisting an order to a backend.
+
+## Engineering focus
+Responsive component design · state management · route-based UI · checkout UX · motion design.
+
+**Maintainer:** [Khurram Taimoor](https://github.com/KhurramTaimoor)
